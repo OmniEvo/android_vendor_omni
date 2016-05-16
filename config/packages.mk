@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     AdAway \
     Apollo \
     MonthCalendarWidget \
-    OpenDelta \
     OmniSwitch \
     Chromium \
     OmniJaws \
