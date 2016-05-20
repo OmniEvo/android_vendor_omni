@@ -9,11 +9,12 @@ endif
 PRODUCT_PACKAGES += \
     AdAway \
     Apollo \
+    Chromium \
     MonthCalendarWidget \
     OmniSwitch \
-    Chromium \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    SlimOTA
 
 
 ifneq ($(TARGET_NO_DSPMANAGER), true)
