@@ -29,6 +29,11 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Enable MTP by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.config=mtp,adb \
+    persist.sys.usb.config=mtp,adb
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
@@ -48,6 +53,10 @@ PRODUCT_COPY_FILES += \
 # Init script file with omni extras
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/init.local.rc:root/init.omni.rc
+
+# Google DNS server
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/etc/resolv.conf:system/etc/resolv.conf
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
