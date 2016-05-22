@@ -20,6 +20,6 @@ endif
 
 # Apply it to build.prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    omnievo.ota.version=OmniEvo-$(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE) \
-    ro.modversion=OmniEvo-$(ROM_VERSION) \
-    ro.omni.version=OmniEvo-$(ROM_VERSION)
+    omnievo.ota.version=OmniEvo-$(PLATFORM_VERSION)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d) \
+    ro.modversion=OmniEvo-$(PLATFORM_VERSION)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d) \
+    ro.omni.version=OmniEvo-$(PLATFORM_VERSION)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d) 
