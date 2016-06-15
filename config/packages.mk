@@ -30,15 +30,19 @@ PRODUCT_PACKAGES += \
 # Additional tools
 PRODUCT_PACKAGES += \
     bash \
+    bzip2 \
+    curl \
     e2fsck \
     fsck.exfat \
     htop \
+    libsepol \
     lsof \
     mke2fs \
     mount.exfat \
     nano \
     openvpn \
     powertop \
+    strace \
     tune2fs \
     vim \
     mkfs.ntfs \
