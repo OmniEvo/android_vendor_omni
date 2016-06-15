@@ -42,7 +42,10 @@ PRODUCT_PACKAGES += \
     powertop \
     strace \
     tune2fs \
-    vim \
+    vim 
+
+# NTFS support
+PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs \
     fsck.ntfs
