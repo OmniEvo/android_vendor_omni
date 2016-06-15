@@ -33,12 +33,10 @@ PRODUCT_PACKAGES += \
     bzip2 \
     curl \
     e2fsck \
-    fsck.exfat \
     htop \
     libsepol \
     lsof \
     mke2fs \
-    mount.exfat \
     nano \
     openvpn \
     powertop \
@@ -48,4 +46,14 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs \
     fsck.ntfs
+
+# exFAT support
+WITH_EXFAT ?= true
+ifeq ($(WITH_EXFAT),true)
+TARGET_USES_EXFAT := true
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+endif
 
