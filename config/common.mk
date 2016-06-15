@@ -58,6 +58,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.config=mtp,adb \
     persist.sys.usb.config=mtp,adb
 
+# Camera effects for devices without a vendor partition
+ifdef ($(arm $(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES +=  \
+    vendor/omni/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/omni/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
