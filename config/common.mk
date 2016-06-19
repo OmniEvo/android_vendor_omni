@@ -85,6 +85,15 @@ PRODUCT_COPY_FILES += \
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
+
+# SuperSU FTW
+PRODUCT_COPY_FILES += \
+vendor/omni/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
 
 # Dashclock
 #PRODUCT_COPY_FILES += \
