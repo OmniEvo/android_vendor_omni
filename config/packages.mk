@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     AdAway \
     Apollo \
     Chromium \
+    KernelAdiutor \
     MonthCalendarWidget \
     OmniSwitch \
     OmniJaws \
