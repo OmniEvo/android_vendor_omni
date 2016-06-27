@@ -65,6 +65,15 @@ PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/omni/prebuilt/bin/blacklist:system/addon.d/blacklist
 
+# Assertive Disaply
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/etc/ad_calib.cfg:system/etc/ad_calib.cfg
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qcom.ad=1 \
+    ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg \
+    persist.radio.add_power_save=1 \
+    persist.radio.data_no_toggle=1
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
@@ -86,7 +95,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
     
-
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
