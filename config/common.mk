@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/omni/prebuilt/bin/blacklist:system/addon.d/blacklist
 
-<<<<<<< HEAD
 # Assertive Disaply
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/ad_calib.cfg:system/etc/ad_calib.cfg
@@ -74,11 +73,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg \
     persist.radio.add_power_save=1 \
     persist.radio.data_no_toggle=1
-=======
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/sysconfig/backup.xml:system/etc/sysconfig/backup.xml
->>>>>>> c4f0640... Adapt to 6.0.1_r52 backup whitelist
 
 # init.d support
 PRODUCT_COPY_FILES += \
